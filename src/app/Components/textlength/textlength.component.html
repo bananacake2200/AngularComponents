@@ -1,0 +1,7 @@
+<div>
+    <label for="inputString">Enter a text:</label>
+    <input type="text" id="inputString" [(ngModel)]="inputString" /><br>
+    <button (click)="calculateLength()">Calculate Length</button>
+  </div>
+ 
+  <p *ngIf="stringLength !== null">Length of the text: {{ stringLength }}</p>
