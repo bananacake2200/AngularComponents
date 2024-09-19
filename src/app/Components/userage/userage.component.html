@@ -1,0 +1,7 @@
+<div>
+    <label for="birthYear">Enter your birth year:</label><br>
+    <input type="number" id="birthYear" [(ngModel)]="birthYear" /><br>
+    <button (click)="calculateAge()">Calculate Age</button>
+  </div>
+  
+  <p *ngIf="age !== null">Your age is: {{ age }}</p>
