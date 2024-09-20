@@ -1,0 +1,10 @@
+<div class="container">
+    <h2>Random Quote Generator</h2>
+  
+    <button (click)="displayRandomQuote()">Get a Random Quote</button>
+  
+    <div class="quote" *ngIf="selectedQuote">
+      <p>{{ selectedQuote }}</p>
+    </div>
+  </div>
+  
