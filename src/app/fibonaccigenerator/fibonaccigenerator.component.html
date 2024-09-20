@@ -1,0 +1,13 @@
+<div class="container">
+    <h2>Fibonacci Number Generator</h2>
+  
+    <div class="input-section">
+      <input [(ngModel)]="n" type="number" placeholder="Enter a number" />
+      <button (click)="generateFibonacci()">Generate Fibonacci</button>
+    </div>
+  
+    <div class="result" *ngIf="fibonacciNumbers.length > 0">
+      <p>Fibonacci Numbers: {{ fibonacciNumbers.join(', ') }}</p>
+    </div>
+  </div>
+  
