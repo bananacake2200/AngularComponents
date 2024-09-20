@@ -1,0 +1,7 @@
+<div>
+    <select [(ngModel)]="selectedValue">
+      <option *ngFor="let option of options" [value]="option">{{ option }}</option>
+    </select>
+    <p>You selected: {{ selectedValue }}</p>
+  </div>
+  
