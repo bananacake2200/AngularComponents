@@ -1,0 +1,13 @@
+<div class="container">
+    <h2>Uppercase Converter</h2>
+  
+     <div class="input-section">
+      <input [(ngModel)]="inputText" type="text" placeholder="Enter your text here" />
+      <button (click)="convertToUpper()">Convert to Uppercase</button>
+    </div>
+  
+     <div class="result" *ngIf="upperText">
+      <p> {{ upperText }}</p>
+    </div>
+  </div>
+  
