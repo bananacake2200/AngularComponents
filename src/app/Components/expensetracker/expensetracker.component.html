@@ -1,0 +1,12 @@
+<div>
+    <h2>Expense Tracker</h2>
+    
+    <input [(ngModel)]="category" placeholder="Category" />
+    <input [(ngModel)]="amount" type="number" placeholder="Amount" />
+    <button (click)="addExpense()">Add Expense</button>
+  
+    <h3>Total Expenses: {{ totalExpenses }}</h3>
+  
+   
+  </div>
+  
