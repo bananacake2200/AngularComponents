@@ -1,0 +1,14 @@
+<div class="container">
+    <h2>Divisibility Checker</h2>
+  
+    <div class="input-section">
+      <input [(ngModel)]="number1" type="number" placeholder="Enter first number" />
+      <input [(ngModel)]="number2" type="number" placeholder="Enter second number" />
+      <button (click)="checkDivisibility()">Check Divisibility</button>
+    </div>
+  
+    <div class="result" *ngIf="isDivisible !== null">
+      <p>{{ number1 }} is {{ isDivisible ? '' : 'not ' }}divisible by {{ number2 }}</p>
+    </div>
+  </div>
+  
