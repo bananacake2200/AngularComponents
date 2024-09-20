@@ -1,0 +1,15 @@
+<div class="container">
+    <h2>Currency Formatter</h2>
+  
+    <div class="input-section">
+      <input [(ngModel)]="amount" type="number" placeholder="Enter amount" />
+      <button (click)="formatCurrency()">Format Currency</button>
+    </div>
+  
+    <div class="result" *ngIf="formattedDollar || formattedPhp || formattedEuro">
+      <p>Dollars: {{ formattedDollar }}</p>
+      <p>PHP: {{ formattedPhp }}</p>
+      <p>Euros: {{ formattedEuro }}</p>
+    </div>
+  </div>
+  
