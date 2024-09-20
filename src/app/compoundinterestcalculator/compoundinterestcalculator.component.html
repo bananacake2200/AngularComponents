@@ -1,0 +1,16 @@
+<div class="container">
+    <h2>Compound Interest Calculator</h2>
+  
+     <div class="input-section">
+      <input [(ngModel)]="principal" type="number" placeholder="Principal Amount" />
+      <input [(ngModel)]="rate" type="number" placeholder="Rate (%)" />
+      <input [(ngModel)]="time" type="number" placeholder="Time (years)" />
+      <input [(ngModel)]="frequency" type="number" placeholder="Compounding Frequency (per year)" />
+      <button (click)="calculateCompoundInterest()">Calculate Compound Interest</button>
+    </div>
+  
+     <div class="result" *ngIf="compoundInterest !== null">
+      <p>Compound Interest: {{ compoundInterest.toFixed(2) }}</p>
+    </div>
+  </div>
+  
