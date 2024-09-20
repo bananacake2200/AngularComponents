@@ -1,0 +1,13 @@
+<div class="container">
+    <h2>Name Uppercaser</h2>
+  
+    <div class="input-section">
+      <input [(ngModel)]="name" type="text" placeholder="Enter your name" />
+      <button (click)="displayUppercaseName()">Display Uppercase Name</button>
+    </div>
+  
+    <div class="result" *ngIf="uppercasedName">
+      <p>Name in uppercase: {{ uppercasedName }}</p>
+    </div>
+  </div>
+  
