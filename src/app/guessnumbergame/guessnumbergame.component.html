@@ -1,0 +1,17 @@
+<div class="container">
+    <h2>Number Guessing Game</h2>
+  
+    
+    <div class="input-section">
+      <input [(ngModel)]="userGuess" type="number" min="1" max="100" placeholder="Enter a number (1-100)" />
+      <button (click)="checkGuess()">Submit</button>
+    </div>
+  
+   
+    <div class="feedback">
+      <p>{{ feedback }}</p>
+    </div>
+  
+    <button (click)="resetGame()">Reset</button>
+  </div>
+  
