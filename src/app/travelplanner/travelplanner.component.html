@@ -1,0 +1,26 @@
+<div class="container">
+    <h2>Travel Planner</h2>
+  
+    <div class="input-section">
+      <input [(ngModel)]="destination" type="text" placeholder="Destination" />
+      <input [(ngModel)]="startDate" type="date" />
+      <input [(ngModel)]="endDate" type="date" />
+      <input [(ngModel)]="newActivity" type="text" placeholder="Add Activity" />
+      <button (click)="addActivity()">Add Activity</button>
+    </div>
+  
+    <div class="activities-list" *ngIf="activities.length">
+      <h4>Activities:</h4>
+      <ul>
+        <li *ngFor="let activity of activities">{{ activity }}</li>
+      </ul>
+    </div>
+  
+    <button (click)="generateSummary()">Generate Trip Summary</button>
+  
+    <div class="result" *ngIf="tripSummary">
+      <h4>Trip Summary:</h4>
+      <pre>{{ tripSummary }}</pre>
+    </div>
+  </div>
+  
