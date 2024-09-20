@@ -1,0 +1,14 @@
+<div class="container">
+    <h2>Multiple Checker</h2>
+  
+     <div class="input-section">
+      <input [(ngModel)]="number1" type="number" placeholder="Enter the first number" />
+      <input [(ngModel)]="number2" type="number" placeholder="Enter the second number" />
+      <button (click)="checkMultiple()">Check if Multiple</button>
+    </div>
+  
+     <div class="result">
+      <p>{{ resultMessage }}</p>
+    </div>
+  </div>
+  
