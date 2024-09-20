@@ -1,0 +1,7 @@
+<div>
+    <button (click)="toggleVisibility()">
+      {{ isVisible ? 'Hide' : 'Show' }} Text
+    </button>
+    <p *ngIf="isVisible">Here is the text!</p>
+  </div>
+  
